@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="Images/jslogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/62c6fa98f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="side-icons">
+        <a href="http://wa.me/8688821985"><img src="Images/whatsapp.png"></a>
+    </div>
+    <div class="side-icons-2">
+        <a href="catering.html">
+             <img src="Images/Check_Pricing.png">
+        </a>
+    </div>
+    <div class="blink-button side-icons-3">
+        <li class="button-nav-li"><button><a href="contact.html#contact-section">Request Quote</a></button></li>
+    </div>
+    <div id="Home" class="target-class">
+        <div class="home-section">
+            <!-- <div class="nav-bar"> -->
+                <nav id="side-menu" class="nav-bar">
+                    <div class="title-logo">
+                        <ul>
+                            <img src="Images/jslogo.png">
+                        </ul>
+                    </div>
+                    <div class="nav-items">
+                        <ul class="not-sidebar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="ppr.html">PPR Convention</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="dash-icon">
+                        <img src="Images/menu.png" onclick="openSideBar()">
+                    </div>
+                    <div class="cross-icon">
+                        <img src="Images/close (1).png" onclick="closeSideBar()">
+                    </div>
+                </nav>
+            <!-- </div> -->
+            <div class="progress-fill">
+                <div class="progress-bar">
+                    
+                </div>
+            </div>
+            <div class="nav-items-respo">
+                <ul class="sidebar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="contact.html" class="contact-bt">Contact</a></li>
+                    <li><a href="ppr.html">PPR Convention</a></li>
+
+                </ul>
+            </div>
+            <div class="contactImage">
+                 <img src="Images/contactBack.png">
+        </div>
+        </div>
+    </div>
+
+    <section class="ContactusSection2" id="contact-section">
+        <div class="ContactusSection2Main">
+            <div class="ContactusSection2MainContainer1">
+                <div class="CS2MC1FormMain">
+                    <form id="form" name="SUBMIT">
+                        <div class="CS2MC1FMContext">
+                            <div class="CS2MC1FMCLabel" id="divname">
+                                <label for="">Name</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCInput"><input type="text" id="name1" name="UserName"></div>
+                        </div>
+                        <div class="CS2MC1FMContext" id="divnumber">
+                            <div class="CS2MC1FMCLabel">
+                                <label for="">Phone Number</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCInput"><input type="text" id="telphone" name="PhoneNumber"></div>
+                        </div>
+                        <div class="CS2MC1FMContext" id="divemail">
+                            <div class="CS2MC1FMCLabel">
+                                <label for="">Email</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCInput"><input type="text" id="email" name="Email"></div>
+                        </div>
+                        <div class="CS2MC1FMContext" id="divOptions">
+                            <div class="CS2MC1FMCLabel">
+                                <label for="">Cater Services</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCInput">
+                                <!-- <div class="CS2MC1FMCInput"><input type="text" id="email" name="Email"></div> -->
+                                <select name="options" id="options">
+                                    <option value="" disabled selected>Select your option</option>
+                                    <!-- <option>select menu</option> -->
+                                    <option>Regular (veg)</option>
+                                    <option>Silver (veg)</option>
+                                    <option>Gold (veg)</option>
+                                    <option>Regular (non-veg)</option>
+                                    <option>Silver (non-veg)</option>
+                                    <option>Gold (non-veg)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="CS2MC1FMContext" id="divDate">
+                            <div class="CS2MC1FMCLabel">
+                                <label for="">Date</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCTextArea">
+                                <div class="CS2MC1FMCInput"><input type="date" id="date" name="Date"></div>
+                            </div>
+                        </div>
+                        <div class="CS2MC1FMContext" id="divmessage">
+                            <div class="CS2MC1FMCLabel">
+                                <label for="">Message</label>
+                                <span id="formErorr"></span>
+                            </div>
+                            <div class="CS2MC1FMCTextArea">
+                                <textarea cols="30" rows="10" id="textarea" name="Message"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="CS2MC1FMSR">
+                            <div class="CS2MC1FMSRSubmit" id="CS2MC1FMSBtn">
+                                <button type="submit" onclick="validate()">Submit</button>
+                                <span class="okieThanks" id="successIcon"><i class="fa-solid fa-check" style="color: #000000;"></i></span>
+                            </div>
+                            
+                            <div class="CS2MC1FMSRReset" id="CS2MC1FMSBtn">
+                                <button type="reset">Reset</button>
+                            </div>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+            <div class="ContactusSection2MainContainer2 reveal">
+                <div class="ContactusSection2MainContainer2Titles">
+                    <div class="CS2MC2TH1 reveal">
+                        <h1>Get to Know Us</h1>
+                    </div>
+                    <div class="CS2MC2TPara">
+                        <span>Discover JS Event Planners-</span>
+                        <p>
+                            Discover the passion, dedication, and expertise that set JS Event Planners apart.
+                             Let us bring your dream event to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-contact ppr-body">
+        <div class="footer-section ">
+            <div class="company-details">
+                <div class="company-logo ">
+                    <a href="#Home"><img src="Images/jslogo.png"></a>
+                </div>
+                <div class="details">
+                    <div class="address">
+                        <img src="Images/location-contact.png".png>
+                        <p>Sy.no- 5P, Aushapur, Telangana, 501301</p>
+                    </div>
+                    <div class="contact-no">
+                        <div class="mail-us">
+                            <img src="Images/mail.png">
+                            <a href="mailto:connect@jseventplanners.com"><p>write to us at connect@jseventplanners.com</p></a>
+                        </div>
+                        <div class="con-two-p">
+                            <a href="tel:+918688821985"><img src="Images/phone (2).png"></a>
+                            <a href="tel:+918688821985"><p>+91 8688821985</p></a>
+                        </div>
+                        <div class="con-one-p">
+                            <a href="tel:+918688821983"><img src="Images/phone (2).png"></a>
+                            <a href="tel:+918688821983"><p>+91 8688821983</p></a>
+                        </div>
+                        
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/js.eventplanners?igsh=MWRxaWNiOGt2NHJ2Yg%3D%3D&utm_source=qr"><img src="Images/instagram.png"></a>
+                        <a href=""><img src="Images/social.png"></a>
+                        <a href="https://www.instagram.com/js.eventplanners?igsh=MWRxaWNiOGt2NHJ2Yg%3D%3D&utm_source=qr"><img src="Images/facebook-app-symbol.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10310.56878413856!2d78.72466970902278!3d17.462023411114647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb77829d0716cf%3A0x4cd0d86c8c2de558!2sPPR%20Convention!5e0!3m2!1sen!2sin!4v1720542337797!5m2!1sen!2sin"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    <div class="end-footer">
+        <p>&#169 2024. All Rights Reserved. Designed by <a href="https://www.shidertech.com/" >ShiderTech</a></p>
+     </div>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event planners | Caterings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cateringcss.css">
+    <link rel="icon" type="image/x-icon" href="Images/jslogo.png">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c3f0618ce9.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+                </style>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+                    </style>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+                        </style>
+                        <style>
+                            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+                            </style>
+                   
+</head>
+<body>
+
+    <div class="side-icons">
+        <a href="http://wa.me/8688821985"><img src="Images/whatsapp.png"></a>
+    </div>
+    <div class="side-icons-2">
+        <a href="catering.html">
+             <img src="Images/Check_Pricing.png">
+        </a>
+    </div>
+    <div class="blink-button side-icons-3">
+        <li class="button-nav-li"><button><a href="contact.html#contact-section">Request Quote</a></button></li>
+    </div>
+
+    <div id="Home" class="target-class">
+        <div class="home-section">
+                <nav id="side-menu" class="nav-bar">
+                    <div class="title-logo">
+                        <ul>
+                            <img src="Images/jslogo.png">
+                        </ul>
+                    </div>
+                    <div class="nav-items">
+                        <ul class="not-sidebar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="ppr.html">PPR Convention</a></li>
+                            <!-- <li class="button-nav-li"><button><a href="button-nav">Contact</a></button></li> -->
+                        </ul>
+                    </div>
+                    <div class="dash-icon">
+                        <img src="Images/menu.png" onclick="openSideBar()">
+                    </div>
+                    <div class="cross-icon">
+                        <img src="Images/close (1).png" onclick="closeSideBar()">
+                    </div>
+                </nav>
+            <div class="progress-fill">
+                <div class="progress-bar">
+                    
+                </div>
+            </div>
+            <div class="nav-items-respo">
+                <ul class="sidebar">
+                    <li onclick="scrollup('Home')"><a>Home</a></li>
+                    <li onclick="scrollup('NewAbout')"><a>About</a></li>
+                    <li onclick="scrollup('services')"><a>Services</a></li>
+                    <li ><a  href="contact.html" class="contact-bt">Contact</a></li>
+                    <li><a href="ppr.html">PPR Convention</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="catering-services">
+        <h1 class="head-11">CATERING</h1>
+        <div class="catering-items">
+            <div class="catering-veg">
+                <div class="veg-box">
+                    <h1>VEG MENU</h1>
+                    <img src="Images/icons8-veg-48.png">
+                </div>
+                <div class="veg-items">
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>REGULAR</h2>
+                            </div>
+                            <div class="cater-items">
+                                <div class="item">
+                                    <p>Salads</p>
+                                    <p> </p>
+                                </div>
+                                <div class="item">
+                                    <p>Rotis</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Hot Snacks</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Indian Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Chutneys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Rasam</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sweet</p>
+                                    <p>One</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>SILVER</h2>
+                            </div>
+                            <div class="cater-items">
+                                <div class="item">
+                                    <p>Welcome Drinks</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Starters</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Salads</p>
+                                    <p> </p>
+                                </div>
+                                <div class="item">
+                                    <p>Rotis</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Hot Snacks</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>North Indian Gravy</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>South Indian Gravy</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Flavour Rice</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Rasam</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sweet</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fresh Fruit Station</p>
+                                    <p>Six</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>GOLD</h2>
+                            </div>
+                            <div class="cater-items">
+                                <div class="item">
+                                    <p>200ml Water for Welcome</p>
+                                    <p></p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Drinks</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Starters</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Chat Station</p>
+                                    <p>Five</p>
+                                </div>
+                                <div class="item">
+                                    <p>South Indian or Italian Station</p>
+                                    <p>Four</p>
+                                </div>
+                                <div class="item">
+                                    <p>Salads</p>
+                                    <p> </p>
+                                </div>
+                                <div class="item">
+                                    <p>Hot Snacks</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Roti's</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>North Indian Gravy</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>South Indian Gravy</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Flavour Rice</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Rasam</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sweets</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fresh Fruit Station</p>
+                                    <p>Six</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="catering-nonveg">
+                <div class="nonveg-box">
+                    <h1>NON VEG MENU</h1>
+                    <img src="Images/icons8-non-veg-48.png">
+                </div>
+                <div class="nonveg-items">
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>REGULAR</h2>
+                            </div>
+                            <div class="cater-items">
+                                <div class="item">
+                                    <p>Welcome Drinks</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks(Veg)</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Indian Bread's</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Non-Veg Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Egg Masala</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Mutton Dalcha</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dum Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Deserts</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>One</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>SILVER</h2>
+                            </div>
+                            <div class="cater-items">
+                                <div class="item">
+                                    <p>Welcome Drinks</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks(Veg)</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Indian Bread's</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Non-Veg Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Egg Masala</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Mutton Dalcha</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dum Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Deserts</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fresh Fruits Station</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Pan Station</p>
+                                    <p>One</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regular-menu veg menu">
+                        <div class="item-box">
+                            <div class="cater-items-header">
+                                <h2>GOLD</h2>
+                            </div>
+                            <div class="cater-items">
+                                
+                                <div class="item">
+                                    <p>Welcome Drinks</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Welcome Snacks(Veg)</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Chaat Station</p>
+                                    <p>Five</p>
+                                </div>
+                                <div class="item">
+                                    <p>Hot Snacks</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Indian Bread's</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Non-Veg Gravys</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Egg Masala</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sea Food</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Mutton Dalcha</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dum Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Gravys</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Veg Biryani</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fry</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Dal</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Sambar</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Rasam</p>
+                                    <p>One</p>
+                                </div>
+                                <div class="item">
+                                    <p>Deserts</p>
+                                    <p>Three</p>
+                                </div>
+                                <div class="item">
+                                    <p>Ice Cream</p>
+                                    <p>Two</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fresh Fruits Station</p>
+                                    <p>4+4</p>
+                                </div>
+                                <div class="item">
+                                    <p>Pan Station</p>
+                                    <p>One</p>
+                                </div>
+                            </div>
+                            <div class="button-items">
+                                <a href="JSEventPlannersMenu.pdf" download>
+                                    <button>Download Menu</button>
+                                </a>
+                                <a href="contact.html#contact-section">
+                                    <button>Select</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
